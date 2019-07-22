@@ -1,0 +1,40 @@
+- public E getFirst() : 리스트의 첫 번째 값 리턴
+- public E getLast() : 리스트의 마지막 번째 값 리턴
+- public E removeFirst() : 리스트의 첫 번째 값 삭제
+- public E removeLast() : 리스트의 마지막 값 삭제
+- public void addFirst(E e) : 리스트의 첫 번째에 특정 요소 삽입
+- public void addLast(E e) : 리스트의 마지막번째에 특정 요소 삽입
+- public boolean contains(Object o) : 특정 요소가 있으면 true, 없으면 false 리턴
+- public int size() : 리스트의 요소의 갯수를 리턴
+- public boolean add(E e) : 리스트의 마지막번째에 특정 요소 추가 -> addLast()와 동일
+- public boolean remove(Object o) : 특정 요소가 존재하면, 삭제
+- public boolean addAll(Collection<? extends E> c) : 리스트의 마지막번째에 모든 Collection 요소 추가
+- public boolean addAll(int index, Collection<? extends E> c) : 리스트의 특정 번째부터 모든 Collection 요소 추가
+- public void clear() : 리스트의 모든 요소 삭제
+- public E get(int index) : 리스트의 특정 번째의 요소 리턴
+- public E set(int index, E element) : 리스트의 특정 번째에 특정 요소 추가
+- public void add(int index, E element) : 리스트의 특정 번째에 특정 요소 추가
+- public E remove(int index) : 리스트의 특정 요소 삭제, 삭제된 요소 리턴
+- public int indexOf(Object o) : 리스트에서 처음으로 검출된 요소 리턴, 요소가 없으면 가장 낮은 인덱스 리턴
+- public int lastIndexOf(Object o) : 리스트에서 마지막으로 검출된 요소 리턴, 요소가 없으면 가장 높은 인덱스 리턴
+- public E peek() : 리스트의 첫 요소 가져옴 (삭제는 하지 않음)
+- public E element() : 리스트의 첫 요소 가져옴 (삭제는 하지 않음)
+- public E poll() : 리스트의 첫 요소 가져오고 삭제
+- public E remove() : 리스트의 첫 요소 가져오고 삭제
+- public boolean offer(E e) : 리스트의 마지막번째에 특정 요소 추가
+- public boolean offerFirst(E e) : 리스트의 맨 앞에 특정 요소 추가
+- public boolean offerLast(E e) : 리스트의 맨 뒤에 특정 요소 추가
+- public E peekFirst() : 리스트의 첫 요소 가져옴 (삭제는 하지 않음), 리스트가 비어있으면 null 리턴
+- public E peekLast() : 리스트의 마지막 요소 가져옴 (삭제는 하지 않음), 리스트가 비어있으면 null 리턴
+- public E pollFirst() : 리스트의 첫 요소 가져와서 삭제, 리스트가 비어있으면 null 리턴
+- public E pollLast() : 리스트의 마지막 요소 가져와서 삭제, 리스트가 비어있으면 null 리턴
+- public void push(E e) : 리스트가 나타내는 스택에 요소를 push, 리스트 맨 앞에 요소 추가
+- public E pop() : 리스트가 나타내는 스택에 요소를 pop, 리스트 맨 앞에 요소를 제거하고 리턴
+- public boolean removeFirstOccurrence(Object o) : 리스트에 처음으로 나오는 특정 요소 삭제 (head에서 tail로 목록 이동할 때), 요소가 없으면 변경없음
+- public boolean removeLastOccurrence(Object o) : 리스트에 마지막에 나오는 특정 요소 삭제 (head에서 tail로 목록 이동할 때), 요소가 없으면 변경없음
+- public ListIterator listIterator(int index) : 리스트의 특정 위치부터 반복되는 반복자를 리턴
+- public Iterator descendingIterator() : 반복자를 역의 순서로 리턴 (tail에서 head 순으로 요소 리턴)
+- public Object clone() : 리스트의 얕은 복사를 리턴
+- public Object[] toArray() : 모든 요소를 담고 있는 배열을 적절한 순서로 리턴 (처음부터 마지막 요소 순으로)
+- public T[] toArray(T[] a) : 모든 요소를 담고 있는 배열을 적절한 순서로 리턴 (처음부터 마지막 요소 순으로)
+- public Spliterator spliterator() : 리스트의 요소에 대해late-binding과 fail-fast Spliterator를 만듬
