@@ -1,40 +1,40 @@
-- public E getFirst() : ¸®½ºÆ®ÀÇ Ã¹ ¹øÂ° °ª ¸®ÅÏ
-- public E getLast() : ¸®½ºÆ®ÀÇ ¸¶Áö¸· ¹øÂ° °ª ¸®ÅÏ
-- public E removeFirst() : ¸®½ºÆ®ÀÇ Ã¹ ¹øÂ° °ª »èÁ¦
-- public E removeLast() : ¸®½ºÆ®ÀÇ ¸¶Áö¸· °ª »èÁ¦
-- public void addFirst(E e) : ¸®½ºÆ®ÀÇ Ã¹ ¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò »ðÀÔ
-- public void addLast(E e) : ¸®½ºÆ®ÀÇ ¸¶Áö¸·¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò »ðÀÔ
-- public boolean contains(Object o) : Æ¯Á¤ ¿ä¼Ò°¡ ÀÖÀ¸¸é true, ¾øÀ¸¸é false ¸®ÅÏ
-- public int size() : ¸®½ºÆ®ÀÇ ¿ä¼ÒÀÇ °¹¼ö¸¦ ¸®ÅÏ
-- public boolean add(E e) : ¸®½ºÆ®ÀÇ ¸¶Áö¸·¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡ -> addLast()¿Í µ¿ÀÏ
-- public boolean remove(Object o) : Æ¯Á¤ ¿ä¼Ò°¡ Á¸ÀçÇÏ¸é, »èÁ¦
-- public boolean addAll(Collection<? extends E> c) : ¸®½ºÆ®ÀÇ ¸¶Áö¸·¹øÂ°¿¡ ¸ðµç Collection ¿ä¼Ò Ãß°¡
-- public boolean addAll(int index, Collection<? extends E> c) : ¸®½ºÆ®ÀÇ Æ¯Á¤ ¹øÂ°ºÎÅÍ ¸ðµç Collection ¿ä¼Ò Ãß°¡
-- public void clear() : ¸®½ºÆ®ÀÇ ¸ðµç ¿ä¼Ò »èÁ¦
-- public E get(int index) : ¸®½ºÆ®ÀÇ Æ¯Á¤ ¹øÂ°ÀÇ ¿ä¼Ò ¸®ÅÏ
-- public E set(int index, E element) : ¸®½ºÆ®ÀÇ Æ¯Á¤ ¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡
-- public void add(int index, E element) : ¸®½ºÆ®ÀÇ Æ¯Á¤ ¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡
-- public E remove(int index) : ¸®½ºÆ®ÀÇ Æ¯Á¤ ¿ä¼Ò »èÁ¦, »èÁ¦µÈ ¿ä¼Ò ¸®ÅÏ
-- public int indexOf(Object o) : ¸®½ºÆ®¿¡¼­ Ã³À½À¸·Î °ËÃâµÈ ¿ä¼Ò ¸®ÅÏ, ¿ä¼Ò°¡ ¾øÀ¸¸é °¡Àå ³·Àº ÀÎµ¦½º ¸®ÅÏ
-- public int lastIndexOf(Object o) : ¸®½ºÆ®¿¡¼­ ¸¶Áö¸·À¸·Î °ËÃâµÈ ¿ä¼Ò ¸®ÅÏ, ¿ä¼Ò°¡ ¾øÀ¸¸é °¡Àå ³ôÀº ÀÎµ¦½º ¸®ÅÏ
-- public E peek() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿È (»èÁ¦´Â ÇÏÁö ¾ÊÀ½)
-- public E element() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿È (»èÁ¦´Â ÇÏÁö ¾ÊÀ½)
-- public E poll() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿À°í »èÁ¦
-- public E remove() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿À°í »èÁ¦
-- public boolean offer(E e) : ¸®½ºÆ®ÀÇ ¸¶Áö¸·¹øÂ°¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡
-- public boolean offerFirst(E e) : ¸®½ºÆ®ÀÇ ¸Ç ¾Õ¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡
-- public boolean offerLast(E e) : ¸®½ºÆ®ÀÇ ¸Ç µÚ¿¡ Æ¯Á¤ ¿ä¼Ò Ãß°¡
-- public E peekFirst() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿È (»èÁ¦´Â ÇÏÁö ¾ÊÀ½), ¸®½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é null ¸®ÅÏ
-- public E peekLast() : ¸®½ºÆ®ÀÇ ¸¶Áö¸· ¿ä¼Ò °¡Á®¿È (»èÁ¦´Â ÇÏÁö ¾ÊÀ½), ¸®½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é null ¸®ÅÏ
-- public E pollFirst() : ¸®½ºÆ®ÀÇ Ã¹ ¿ä¼Ò °¡Á®¿Í¼­ »èÁ¦, ¸®½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é null ¸®ÅÏ
-- public E pollLast() : ¸®½ºÆ®ÀÇ ¸¶Áö¸· ¿ä¼Ò °¡Á®¿Í¼­ »èÁ¦, ¸®½ºÆ®°¡ ºñ¾îÀÖÀ¸¸é null ¸®ÅÏ
-- public void push(E e) : ¸®½ºÆ®°¡ ³ªÅ¸³»´Â ½ºÅÃ¿¡ ¿ä¼Ò¸¦ push, ¸®½ºÆ® ¸Ç ¾Õ¿¡ ¿ä¼Ò Ãß°¡
-- public E pop() : ¸®½ºÆ®°¡ ³ªÅ¸³»´Â ½ºÅÃ¿¡ ¿ä¼Ò¸¦ pop, ¸®½ºÆ® ¸Ç ¾Õ¿¡ ¿ä¼Ò¸¦ Á¦°ÅÇÏ°í ¸®ÅÏ
-- public boolean removeFirstOccurrence(Object o) : ¸®½ºÆ®¿¡ Ã³À½À¸·Î ³ª¿À´Â Æ¯Á¤ ¿ä¼Ò »èÁ¦ (head¿¡¼­ tail·Î ¸ñ·Ï ÀÌµ¿ÇÒ ¶§), ¿ä¼Ò°¡ ¾øÀ¸¸é º¯°æ¾øÀ½
-- public boolean removeLastOccurrence(Object o) : ¸®½ºÆ®¿¡ ¸¶Áö¸·¿¡ ³ª¿À´Â Æ¯Á¤ ¿ä¼Ò »èÁ¦ (head¿¡¼­ tail·Î ¸ñ·Ï ÀÌµ¿ÇÒ ¶§), ¿ä¼Ò°¡ ¾øÀ¸¸é º¯°æ¾øÀ½
-- public ListIterator listIterator(int index) : ¸®½ºÆ®ÀÇ Æ¯Á¤ À§Ä¡ºÎÅÍ ¹Ýº¹µÇ´Â ¹Ýº¹ÀÚ¸¦ ¸®ÅÏ
-- public Iterator descendingIterator() : ¹Ýº¹ÀÚ¸¦ ¿ªÀÇ ¼ø¼­·Î ¸®ÅÏ (tail¿¡¼­ head ¼øÀ¸·Î ¿ä¼Ò ¸®ÅÏ)
-- public Object clone() : ¸®½ºÆ®ÀÇ ¾èÀº º¹»ç¸¦ ¸®ÅÏ
-- public Object[] toArray() : ¸ðµç ¿ä¼Ò¸¦ ´ã°í ÀÖ´Â ¹è¿­À» ÀûÀýÇÑ ¼ø¼­·Î ¸®ÅÏ (Ã³À½ºÎÅÍ ¸¶Áö¸· ¿ä¼Ò ¼øÀ¸·Î)
-- public T[] toArray(T[] a) : ¸ðµç ¿ä¼Ò¸¦ ´ã°í ÀÖ´Â ¹è¿­À» ÀûÀýÇÑ ¼ø¼­·Î ¸®ÅÏ (Ã³À½ºÎÅÍ ¸¶Áö¸· ¿ä¼Ò ¼øÀ¸·Î)
-- public Spliterator spliterator() : ¸®½ºÆ®ÀÇ ¿ä¼Ò¿¡ ´ëÇØlate-binding°ú fail-fast Spliterator¸¦ ¸¸µë
+public E getFirst() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ë²ˆì§¸ ê°’ ë¦¬í„´
+public E getLast() : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ ë²ˆì§¸ ê°’ ë¦¬í„´
+public E removeFirst() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ë²ˆì§¸ ê°’ ì‚­ì œ
+public E removeLast() : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ ê°’ ì‚­ì œ
+public void addFirst(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì‚½ìž…
+public void addLast(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì‚½ìž…
+public boolean contains(Object o) : íŠ¹ì • ìš”ì†Œê°€ ìžˆìœ¼ë©´ true, ì—†ìœ¼ë©´ false ë¦¬í„´
+public int size() : ë¦¬ìŠ¤íŠ¸ì˜ ìš”ì†Œì˜ ê°¯ìˆ˜ë¥¼ ë¦¬í„´
+public boolean add(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€ -> addLast()ì™€ ë™ì¼
+public boolean remove(Object o) : íŠ¹ì • ìš”ì†Œê°€ ì¡´ìž¬í•˜ë©´, ì‚­ì œ
+public boolean addAll(Collection<? extends E> c) : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ë²ˆì§¸ì— ëª¨ë“  Collection ìš”ì†Œ ì¶”ê°€
+public boolean addAll(int index, Collection<? extends E> c) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ë²ˆì§¸ë¶€í„° ëª¨ë“  Collection ìš”ì†Œ ì¶”ê°€
+public void clear() : ë¦¬ìŠ¤íŠ¸ì˜ ëª¨ë“  ìš”ì†Œ ì‚­ì œ
+public E get(int index) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ë²ˆì§¸ì˜ ìš”ì†Œ ë¦¬í„´
+public E set(int index, E element) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€
+public void add(int index, E element) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€
+public E remove(int index) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ìš”ì†Œ ì‚­ì œ, ì‚­ì œëœ ìš”ì†Œ ë¦¬í„´
+public int indexOf(Object o) : ë¦¬ìŠ¤íŠ¸ì—ì„œ ì²˜ìŒìœ¼ë¡œ ê²€ì¶œëœ ìš”ì†Œ ë¦¬í„´, ìš”ì†Œê°€ ì—†ìœ¼ë©´ ê°€ìž¥ ë‚®ì€ ì¸ë±ìŠ¤ ë¦¬í„´
+public int lastIndexOf(Object o) : ë¦¬ìŠ¤íŠ¸ì—ì„œ ë§ˆì§€ë§‰ìœ¼ë¡œ ê²€ì¶œëœ ìš”ì†Œ ë¦¬í„´, ìš”ì†Œê°€ ì—†ìœ¼ë©´ ê°€ìž¥ ë†’ì€ ì¸ë±ìŠ¤ ë¦¬í„´
+public E peek() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì˜´ (ì‚­ì œëŠ” í•˜ì§€ ì•ŠìŒ)
+public E element() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì˜´ (ì‚­ì œëŠ” í•˜ì§€ ì•ŠìŒ)
+public E poll() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì˜¤ê³  ì‚­ì œ
+public E remove() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì˜¤ê³  ì‚­ì œ
+public boolean offer(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ë²ˆì§¸ì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€
+public boolean offerFirst(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ë§¨ ì•žì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€
+public boolean offerLast(E e) : ë¦¬ìŠ¤íŠ¸ì˜ ë§¨ ë’¤ì— íŠ¹ì • ìš”ì†Œ ì¶”ê°€
+public E peekFirst() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì˜´ (ì‚­ì œëŠ” í•˜ì§€ ì•ŠìŒ), ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì–´ìžˆìœ¼ë©´ null ë¦¬í„´
+public E peekLast() : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ ìš”ì†Œ ê°€ì ¸ì˜´ (ì‚­ì œëŠ” í•˜ì§€ ì•ŠìŒ), ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì–´ìžˆìœ¼ë©´ null ë¦¬í„´
+public E pollFirst() : ë¦¬ìŠ¤íŠ¸ì˜ ì²« ìš”ì†Œ ê°€ì ¸ì™€ì„œ ì‚­ì œ, ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì–´ìžˆìœ¼ë©´ null ë¦¬í„´
+public E pollLast() : ë¦¬ìŠ¤íŠ¸ì˜ ë§ˆì§€ë§‰ ìš”ì†Œ ê°€ì ¸ì™€ì„œ ì‚­ì œ, ë¦¬ìŠ¤íŠ¸ê°€ ë¹„ì–´ìžˆìœ¼ë©´ null ë¦¬í„´
+public void push(E e) : ë¦¬ìŠ¤íŠ¸ê°€ ë‚˜íƒ€ë‚´ëŠ” ìŠ¤íƒì— ìš”ì†Œë¥¼ push, ë¦¬ìŠ¤íŠ¸ ë§¨ ì•žì— ìš”ì†Œ ì¶”ê°€
+public E pop() : ë¦¬ìŠ¤íŠ¸ê°€ ë‚˜íƒ€ë‚´ëŠ” ìŠ¤íƒì— ìš”ì†Œë¥¼ pop, ë¦¬ìŠ¤íŠ¸ ë§¨ ì•žì— ìš”ì†Œë¥¼ ì œê±°í•˜ê³  ë¦¬í„´
+public boolean removeFirstOccurrence(Object o) : ë¦¬ìŠ¤íŠ¸ì— ì²˜ìŒìœ¼ë¡œ ë‚˜ì˜¤ëŠ” íŠ¹ì • ìš”ì†Œ ì‚­ì œ (headì—ì„œ tailë¡œ ëª©ë¡ ì´ë™í•  ë•Œ), ìš”ì†Œê°€ ì—†ìœ¼ë©´ ë³€ê²½ì—†ìŒ
+public boolean removeLastOccurrence(Object o) : ë¦¬ìŠ¤íŠ¸ì— ë§ˆì§€ë§‰ì— ë‚˜ì˜¤ëŠ” íŠ¹ì • ìš”ì†Œ ì‚­ì œ (headì—ì„œ tailë¡œ ëª©ë¡ ì´ë™í•  ë•Œ), ìš”ì†Œê°€ ì—†ìœ¼ë©´ ë³€ê²½ì—†ìŒ
+public ListIterator listIterator(int index) : ë¦¬ìŠ¤íŠ¸ì˜ íŠ¹ì • ìœ„ì¹˜ë¶€í„° ë°˜ë³µë˜ëŠ” ë°˜ë³µìžë¥¼ ë¦¬í„´
+public Iterator descendingIterator() : ë°˜ë³µìžë¥¼ ì—­ì˜ ìˆœì„œë¡œ ë¦¬í„´ (tailì—ì„œ head ìˆœìœ¼ë¡œ ìš”ì†Œ ë¦¬í„´)
+public Object clone() : ë¦¬ìŠ¤íŠ¸ì˜ ì–•ì€ ë³µì‚¬ë¥¼ ë¦¬í„´
+public Object[] toArray() : ëª¨ë“  ìš”ì†Œë¥¼ ë‹´ê³  ìžˆëŠ” ë°°ì—´ì„ ì ì ˆí•œ ìˆœì„œë¡œ ë¦¬í„´ (ì²˜ìŒë¶€í„° ë§ˆì§€ë§‰ ìš”ì†Œ ìˆœìœ¼ë¡œ)
+public T[] toArray(T[] a) : ëª¨ë“  ìš”ì†Œë¥¼ ë‹´ê³  ìžˆëŠ” ë°°ì—´ì„ ì ì ˆí•œ ìˆœì„œë¡œ ë¦¬í„´ (ì²˜ìŒë¶€í„° ë§ˆì§€ë§‰ ìš”ì†Œ ìˆœìœ¼ë¡œ)
+public Spliterator spliterator() : ë¦¬ìŠ¤íŠ¸ì˜ ìš”ì†Œì— ëŒ€í•´late-bindingê³¼ fail-fast Spliteratorë¥¼ ë§Œë“¬
